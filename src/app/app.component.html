@@ -1,0 +1,50 @@
+<div class="container">
+
+    <h1><i class="fas fa-calculator"></i> {{ titulo }}</h1>
+
+    <form>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Operacion A </label>
+                    <input type="number" class="form-control text-center" placeholder="Ingrese la operacion A" [(ngModel)]="operandoA" name="operandoA" />
+                </div>
+
+                <div class="form-group">
+                    <label>Operacion B</label>
+                    <input type="number" class="form-control text-center" placeholder="Ingrese la operacion B" [(ngModel)]="operandoB" name="operandoB" />
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary" (click)="onSumar()">
+                +
+              </button>
+
+                            <button type="submit" class="btn btn-success" (click)="onRestar()">
+                -
+              </button>
+
+                            <button type="submit" class="btn btn-warning" (click)="onMultiplicar()">
+                X
+              </button>
+
+                            <button type="submit" class="btn btn-danger" (click)="onDividir()">
+                ÷
+              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="panel panel-danger">El resultado es : {{ resultado }}</div>
+</div>
+
+<footer class="row justify-content-center card-footer">
+    <p>
+        {{ year }} | <span> Francis Jairo Matías Rosario </span>
+    </p>
+</footer>

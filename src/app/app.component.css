@@ -1,0 +1,32 @@
+    .container {
+        border: 10px;
+        width: 500px;
+        margin-bottom: 20px;
+    }
+    
+    h1,
+    button,
+    .panel-danger,
+    .form-group,
+    .submit {
+        text-align: center;
+    }
+    
+    label,
+    .panel-danger,
+    footer {
+        font-weight: bold;
+    }
+    
+    button,
+    .form-control {
+        margin: 10px;
+    }
+    
+    .form-control {
+        height: 30px;
+    }
+    
+    .panel-danger {
+        background: wheat;
+    }
